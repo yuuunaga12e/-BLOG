@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+:root {
+  /* Requested Colors: "Soft, Adult Natural" */
+  --color-base: #F5EFE7;
+  --color-text-main: #5A4032;
+  --color-secondary: #E0D3C0;
+  --color-accent: #6B8A7A;
+  --color-border: #D6C7B5;
+  
+  /* Semantic mappings */
+  --background: var(--color-base);
+  --foreground: var(--color-text-main);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  
+  --color-base: var(--color-base);
+  --color-text-main: var(--color-text-main);
+  --color-secondary: var(--color-secondary);
+  --color-accent: var(--color-accent);
+  --color-border: var(--color-border);
+  
+  --font-sans: var(--font-geist-sans);
+  --font-header: var(--font-rounded);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-header), sans-serif;
+}
+
