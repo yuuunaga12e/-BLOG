@@ -14,7 +14,7 @@ const mPlusRounded = M_PLUS_Rounded_1c({
 });
 
 export const metadata: Metadata = {
-  title: "My Sanity Blog",
+  title: "ゆかりBLOG",
   description: "A simple blog powered by Sanity",
 };
 

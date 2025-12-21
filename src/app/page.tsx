@@ -14,14 +14,7 @@ export default async function Home() {
     <>
       <Header />
       <main className="flex-grow container mx-auto px-4 py-12">
-        <section className="mb-12 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-text-main mb-4 tracking-tight">
-            Latest Updates
-          </h1>
-          <p className="text-text-main/70 max-w-2xl mx-auto text-lg">
-            日々のこと、学んだことを徒然なるままに書き綴っています。
-          </p>
-        </section>
+
 
         <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {posts.length > 0 ? (
