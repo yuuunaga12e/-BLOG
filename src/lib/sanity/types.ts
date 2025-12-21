@@ -11,5 +11,7 @@ export interface Post {
         }
         alt?: string
     }
+    categories?: Array<{ title: string; color?: string }>
+    tags?: Array<{ title: string }>
     body?: any[]
 }

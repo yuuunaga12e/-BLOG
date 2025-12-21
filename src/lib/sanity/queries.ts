@@ -12,6 +12,13 @@ export const POSTS_QUERY = defineQuery(`*[_type == "post" && defined(slug.curren
       url
     },
     alt
+  },
+  categories[]->{
+    title,
+    color
+  },
+  tags[]->{
+    title
   }
 }`)
 
@@ -28,5 +35,12 @@ export const POST_QUERY = defineQuery(`*[_type == "post" && slug.current == $slu
       url
     },
     alt
+  },
+  categories[]->{
+    title,
+    color
+  },
+  tags[]->{
+    title
   }
 }`)

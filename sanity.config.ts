@@ -12,6 +12,8 @@ import { structureTool } from 'sanity/structure'
 import { apiVersion, dataset, projectId } from './src/lib/sanity/client'
 import { schema } from './src/sanity/schemaTypes'
 
+import { jaJPLocale } from '@sanity/locale-ja-jp'
+
 export default defineConfig({
     basePath: '/studio',
     projectId,
@@ -23,5 +25,6 @@ export default defineConfig({
         // Vision is a tool that lets you query your content with GROQ in the studio
         // https://www.sanity.io/docs/the-vision-plugin
         visionTool({ defaultApiVersion: apiVersion }),
+        jaJPLocale(),
     ],
 })
