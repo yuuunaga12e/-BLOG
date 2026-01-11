@@ -1,30 +1,52 @@
 @import "tailwindcss";
 
 :root {
-  /* Requested Colors: "Soft, Adult Natural" */
-  --color-base: #F5EFE7;
-  --color-text-main: #5A4032;
-  --color-secondary: #E0D3C0;
-  --color-accent: #6B8A7A;
-  --color-border: #D6C7B5;
-  
-  /* Semantic mappings */
-  --background: var(--color-base);
-  --foreground: var(--color-text-main);
+  /* New Palette */
+  --color-light: #F2F2F2;
+  /* 背景色: オフホワイト */
+  --color-grey: #AFAFAF;
+  /* サブテキスト: グレー */
+  --color-sage: #9AB492;
+  /* アクセント: セージグリーン */
+  --color-dark-green: #4A5F40;
+  /* メイン文字/ボタン: ディープモス */
+  --color-gold: #C2A86C;
+  /* 強調/バッジ: ゴールド */
+
+  /* Legacy Semantic Mappings (Aliases) */
+  --color-base: var(--color-light);
+  --color-text-main: var(--color-dark-green);
+  --color-secondary: var(--color-grey);
+  --color-accent: var(--color-sage);
+  --color-border: var(--color-grey);
+
+  /* Standard Semantic mappings */
+  --background: var(--color-light);
+  --foreground: var(--color-dark-green);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  
+
   --color-base: var(--color-base);
   --color-text-main: var(--color-text-main);
   --color-secondary: var(--color-secondary);
   --color-accent: var(--color-accent);
   --color-border: var(--color-border);
-  
-  --font-sans: var(--font-geist-sans);
-  --font-header: var(--font-rounded);
+
+  /* New Tokens */
+  --color-light: var(--color-light);
+  --color-grey: var(--color-grey);
+  --color-sage: var(--color-sage);
+  --color-dark-green: var(--color-dark-green);
+  --color-gold: var(--color-gold);
+
+  --font-sans: var(--font-body);
+  --font-header: var(--font-display);
+
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
 }
 
 body {
@@ -33,7 +55,11 @@ body {
   font-family: var(--font-sans), sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-header), sans-serif;
 }
-

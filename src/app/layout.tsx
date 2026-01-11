@@ -1,16 +1,18 @@
 import type { Metadata } from "next";
-import { Geist, M_PLUS_Rounded_1c } from "next/font/google";
+import { Poppins, Open_Sans } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const openSans = Open_Sans({
+  variable: "--font-body",
   subsets: ["latin"],
+  display: "swap",
 });
 
-const mPlusRounded = M_PLUS_Rounded_1c({
-  variable: "--font-rounded",
-  weight: ["400", "700"],
+const poppins = Poppins({
+  variable: "--font-display",
+  weight: ["400", "600", "700"],
   subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -26,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body
-        className={`${geistSans.variable} ${mPlusRounded.variable} antialiased min-h-screen flex flex-col`}
+        className={`${openSans.variable} ${poppins.variable} antialiased min-h-screen flex flex-col`}
       >
         {children}
       </body>
