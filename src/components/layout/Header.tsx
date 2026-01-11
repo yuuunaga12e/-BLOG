@@ -6,7 +6,7 @@ export function Header() {
             <div className="container mx-auto px-4 flex items-center justify-between">
                 <div className="flex flex-col">
                     <Link href="/" className="text-[28px] font-bold text-text-main hover:text-accent transition-colors">
-                        ゆかりBLOG
+                        Lynx Base
                     </Link>
                     <p className="text-sm text-text-main/70 mt-1">
                         日々のこと、学んだことを徒然なるままに書き綴っています。

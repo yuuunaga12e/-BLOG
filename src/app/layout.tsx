@@ -16,7 +16,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "ゆかりBLOG",
+  title: "Lynx Base",
   description: "A simple blog powered by Sanity",
 };
 
